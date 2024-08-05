@@ -1,0 +1,236 @@
+/* Estilo para o cardápio */
+body {
+    font-family: Arial, sans-serif;
+    
+    background-color: var(--cor-secundaria1); /* Fundo do site */
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2 {
+    color: rgb(27, 27, 27); /* Cor da fonte */
+    font-family: bungee;
+}
+
+header {
+    
+   background-color: var(--cor-terciaria1);
+    height: 200px; /* Ajuste a altura do header conforme necessário */
+    width: 100%;
+    color: white; /* Ajuste a cor do texto conforme necessário */
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    justify-content: space-between; /* Espaça os elementos para a extremidade do header */
+    padding: 0;
+    font-family: bungee;
+    
+}
+header img{
+    width: 10rem;
+}
+/* Estilo para a barra de menu */
+.menuNav {
+    background-color: var(--cor-terciaria1);
+    width: 100%; /* Faz o menu preencher toda a largura do header */
+    margin-top: auto; /* Move o menuNav para a parte inferior do header */
+    padding: 0;
+    height: 3rem;
+}
+
+.menuNav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Garante que a lista preencha toda a largura do menu */
+}
+
+.menuNav ul li {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    border: 1px solid transparent;
+    flex: 1; /* Faz com que cada item de menu ocupe a mesma largura */
+}
+
+/* Estilo para os itens do menu */
+.menuNav ul li:hover {
+    background-color: var(--cor-terciaria2); /* Cor de fundo ao passar o mouse */
+    transition: background-color 0.3s ease;
+}
+
+.menuNav ul a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Estilo para o carrinho de compras */
+#carrinho {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo para os botões */
+button {
+    background-color: var(--cor-terciaria1); /* Cor de fundo dos botões */
+    color: #fff; /* Cor do texto dos botões */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Estilo para os campos de entrada */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para os radio buttons */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .menuItem{
+        border: 1px solid #000000;
+        border-radius: 5%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menuItem img{
+        width: 8rem;
+        border-radius: 50%;
+    }
+
+    .custom-checkbox {
+        width: 25px;
+        height: 25px;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #fff;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+    
+    .custom-checkbox:checked {
+        background-color: var(--cor-terciaria1);
+        border-color: var(--cor-terciaria1);
+    }
+    
+    .custom-checkbox:checked::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 9px;
+        width: 6px;
+        height: 12px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+
+
+    /*carrinho*/
+    .cartItem {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .cartImg {
+        width: 50px;
+        height: auto;
+        border-radius: 10px; /* Bordas arredondadas */
+    }
+    
+    .cartItemDetails {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .item-quantity {
+        width: 50px;
+    }
+    
+    .remove-item {
+        background-color: var(--cor-terciaria1);
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .remove-item:hover {
+        background-color: var(--cor-terciaria1);
+    }
+    
+    #total {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    /* Rodapé */
+footer {
+    background: var(--cor-terciaria1);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 5%;
+    font-family: bungee;
+}
+
+footer .footer-content {
+    margin-bottom: 20px;
+}
+
+footer .footer-content h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+footer .footer-content p {
+    margin: 10px 0;
+}
+
+
+footer .footer-bottom {
+    border-top: 1px solid var(--cor-terciaria2);
+    padding-top: 10px;
+}
+
+footer .footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Paleta de cores personalizada */
+:root {
+    --cor-primaria: #b87400;
+    --cor-secundaria1: #fffefd; /* Fundo do site */
+    --cor-secundaria2: #fed353;
+    --cor-terciaria1: #56070C;
+    --cor-terciaria2: #36070a;
+}

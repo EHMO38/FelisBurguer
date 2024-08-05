@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felis Burguers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="image">
+            <img src="src/logo1.png" alt="logo">
+        </div>
+            
+
+        <nav class="menuNav"><ul>
+            <a href="#" id="showMenu"><li><strong>Cardápio</strong></li></a>
+            <a href="#" id="showCart"><li><strong>Carrinho</strong></li></a>
+        </ul></nav>
+    </header>
+    
+
+    <div  id="menuSection">
+            <!-- Hambúrgueres -->
+        <h2>Hambúrgueres</h2>
+        <div class="menu">
+            <div class="menuItem">
+                <img src="src/cat.jpg" >
+                <input type="checkbox" id="burger1" name="catburger" value="catburger" class="custom-checkbox" data-name="CatBurguer" data-price="10.00">
+            <label for="burger1">CatBurguer - Ingredientes: Pão brioche, carne artesanal, queijo mussarela, cebola, alface e tomate  - R$ 10,00</label>
+            </div>
+            
+            
+
+            <div class="menuItem">
+                <img src="src/chettah.jpg" >
+                <input type="checkbox" class="custom-checkbox" id="burger2" name="cheetahburger" value="cheetahburger" data-name="Cheetah" data-price="12.00">
+                <label for="burger2">Cheetah - Ingredientes: Pão brioche, carne artesanal, queijo cheddar, molho especial, ovo, cebola, alface e tomate  - R$ 12,00</label>
+            </div>
+            
+
+            <div class="menuItem">
+                <img src="src/jaguar.jpg" >
+                <input type="checkbox" class="custom-checkbox" id="burger3" name="Jaguar" value="Jaguar" data-name="Jaguar" data-price="16.00">
+                <label for="burger3">Jaguar - Ingredientes: pão brioche, 2x carnes artesanais, Queijo cheddar, Bacon, Ovo, Alface, cebola empanada, Tomate e Molho especial - R$ 16,00</label>
+            </div>
+            
+
+            <div class="menuItem">
+                <img src="src/lion.jpg" alt="burguer">
+                <input type="checkbox" class="custom-checkbox" id="burger4" name="Lion" value="Lion" data-name="Lion" data-price="20.00">
+                <label for="burger4">Lion - Ingredientes: pão brioche 3x carnes artesanais, Queijo cheddar, Bacon, frango, Ovo, Alface, cebola empanada, Tomate e Molho especial - R$ 20,00</label>
+            </div>
+            
+
+            <div class="menuItem">
+                <img src="src/tiger.jpg" alt="burguer">
+                <input type="checkbox" class="custom-checkbox" id="burger5" name="Tiger" value="Tiger" data-name="Tiger" data-price="22.00">
+                <label for="burger5">Tiger - Ingredientes: pão brioche, 3x carnes artesanais, Queijo cheddar, carne de sol, Bacon, Ovo, Alface,cebola empanada, Tomate e Molho especial - R$ 22,00</label>
+            </div>
+            
+
+        </div>
+
+        <!-- Salgados -->
+        <h2>Acompanhamentos</h2>
+        <div class="menu">
+            <div class="menuItem">
+                <img src="src/mini coxinhas.jfif" alt="miniCoxinha">
+                <input type="checkbox" class="custom-checkbox" id="salgado1" name="salgado" value="Coxinha" data-name="Mini Coxinhas" data-price="5.00">
+                <label for="salgado1">10x Mini coxinhas - R$ 5,00</label>
+            </div>
+            
+            
+            <div class="menuItem">
+                <img src="/src/batatinhas tamanho pequeno.jfif" alt="fritasP">
+                <input type="checkbox" class="custom-checkbox" id="salgado2" name="salgado" data-name="fritasP" data-price="5.00"value="fritasP">
+                <label for="salgado2">Porção de batata frita pequena - R$ 5,00</label>
+            </div>
+
+            <div class="menuItem">
+                <img src="/src/batatinhas tamanho medio.jfif" alt="fritasM">
+                <input type="checkbox" class="custom-checkbox" id="salgado3" name="salgado" value="fritasM" data-price="8.00"value="fritasM">
+                <label for="salgado3">Porção de batata frita média - R$ 8,00</label>
+            </div>
+
+            <div class="menuItem">
+                <img src="/src/batatinhas tamanho grande.jfif" alt="fritas">
+                <input type="checkbox" class="custom-checkbox" id="salgado4" name="salgado" value="fritasG" data-price="12.00" data-name="fritasG">
+                <label for="salgado4">Porção de batata frita grande - R$ 12,00</label>
+            </div>
+            
+        </div>
+
+        <!-- Bebidas -->
+        <h2>Bebidas</h2>
+        <div class="menu">
+            <div class="menuItem">
+                <img src="src/antartica350.jpg" alt="Refrigerante">
+                <input type="checkbox" class="custom-checkbox" id="drink1" name="drink" value="Refrigerante" data-price="4.00" data-name="Guaraná antártica 350ml">
+            <label for="drink1" >Guaraná antártica 350ml - R$ 4,00</label>
+            </div>
+            
+            
+            <div class="menuItem">
+                <img src="src/guarana-antarctica-garrafa-pet-1-l.jpg" alt="Refrigerante">
+                <input type="checkbox" class="custom-checkbox" id="drink2" name="drink" value="Refrigerante"data-price="8.00" data-name="Guaraná antártica 1L">
+            <label for="drink2">Guaraná antártica 1L - R$ 8,00</label>
+            </div>
+            
+
+            <div class="menuItem">
+                <img src="src/Guarana-Antarctica-2L-1024x1024.png" alt="Refrigerante">
+                <input type="checkbox" class="custom-checkbox" id="drink3" name="drink" value="Refrigerante" data-price="10.00" data-name="Guaraná antártica 2L">
+            <label for="drink3">Guaraná antártica 2L - R$ 10,00</label>
+            </div>
+            
+
+            <div class="menuItem">
+                <img src="src/coca em lata.jfif" alt="Refrigerante">
+                <input type="checkbox" class="custom-checkbox" id="drink4" name="drink" value="Refrigerante" data-price="5.00" data-name="CocaCola 350ml">
+                <label for="drink4"> CocaCola 350ml - R$ 5,00</label>
+            </div>
+            
+            
+            <div class="menuItem">
+                <img src="src/coca de 1l.jfif" alt="Refrigerante">
+                <input type="checkbox" class="custom-checkbox" id="drink5" name="drink" value="Refrigerante" data-price="9.00" data-name="CocaCola 1L">
+                <label for="drink5">CocaCola 1L - R$ 9,00</label>
+            </div>
+            
+
+           <div class="menuItem">
+            <img src="src/coca de 2L.jfif" alt="Refrigerante">
+            <input type="checkbox" class="custom-checkbox" id="drink6" name="drink" value="Refrigerante" data-price="12.00" data-name="CocaCola 2L">
+            <label for="drink6">CocaCola 2L - R$ 12,00</label>
+        </div> 
+        </div>
+       
+      
+            
+    </div>
+    
+    
+    <div>
+        <div id="cartSection" style="display: none;">
+                <!-- Carrinho de compras -->
+            <h2>Carrinho de Compras</h2>
+            <ul id="carrinho">
+                <!-- Itens selecionados aparecerão aqui -->
+            </ul>
+
+            
+    </div>
+        </div>
+        </div>
+        
+
+     
+
+     
+  <!-- Opções de pagamento -->
+  <h2>Opções de Pagamento</h2>
+  <input type="radio" id="cartao" name="pagamento" value="Cartão">
+  <label for="cartao">Cartão (Débito ou Crédito)</label>
+  <br>
+  <input type="radio" id="pix" name="pagamento" value="Pix">
+  <label for="pix">Pix</label>
+
+  <!-- Informações do cliente -->
+  <h2>Informações do Cliente</h2>
+  <input type="text" id="nome" placeholder="Nome completo">
+  <input type="text" id="endereco" placeholder="Endereço de entrega">
+  <div id="barraFinalizacao">
+      <!-- Opções de pagamento, informações do cliente, etc. -->
+      <!-- ... -->
+      <button onclick="confirmarPedido()">Confirmar Pedido</button>
+      <button onclick="cancelarPedido()">Cancelar Pedido</button>
+   
+
+      <div id="confirmationMessageContainer" style="display: none;"></div>
+
+      <footer>
+        <div class="footer-content">
+            <h3>Felis Burguer</h3>
+            <p>Os melhores hambúrgueres da cidade. Venha nos visitar ou faça seu pedido online.</p>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Felis Burguer. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
